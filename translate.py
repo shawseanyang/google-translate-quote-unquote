@@ -3,7 +3,7 @@
 # Google "Translate"
 
 # Takes your perfectly good input and spices it up using multiple layers of Google Translate!
-
+# Provide an `INPUT`, the number of languages (`LAYERS`) to subject it to, and then feast your eyes!
 
 import random
 import time
@@ -13,7 +13,7 @@ from urllib.parse import quote
 
 
 # ---- YOUR INPUTS HERE ----
-INPUT = 'You can eat the garlic bread I bought today for breakfast tomorrow.'
+INPUT = 'People. Technology. Awesome.'
 INPUT_LANG_CODE = 'en'
 LAYERS = 10
 # ^ number of translations to pass your input thru.
@@ -29,8 +29,8 @@ def gtranslate(prev_lang_code, new_lang_code, query):
     """Query Google Translate.
 
     Keyword arguments:
-    prev_lang_code -- 2 character Google Translate code for source language
-    new_lang_code -- 2 character Google Translate code for destination language
+    prev_lang_code -- 2-3 character Google Translate code for source language
+    new_lang_code -- 2-3 character Google Translate code for destination language
     query -- string to Translate
 
     Returns translated text if successful, -1 if failed (most often due to Google Translate detecting that this is a script)
