@@ -13,7 +13,7 @@ from urllib.parse import quote
 
 
 # ---- YOUR INPUTS HERE ----
-INPUT = 'People. Technology. Awesome.'
+INPUT = 'Today I dressed my unicorn up in preparation for the race.'
 INPUT_LANG_CODE = 'en'
 LAYERS = 10
 # ^ number of translations to pass your input thru.
